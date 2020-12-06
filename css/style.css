@@ -14,8 +14,11 @@ header{
 main{
     background-color: gainsboro;
 }
-nav{
-    background-color: darkgrey;
+.navclass{
+    background-color: darkgray;
+}
+.dark-nav{
+    background-color: rgb(28, 2, 255);
 }
 footer{
 background-color: #cfa298 ;

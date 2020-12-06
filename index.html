@@ -6,7 +6,7 @@
 <body>
 <div class="all-gridbox">
 
-    <header>
+    <header class="hooder">
         <h1>Take Better Notes</h1>
     </header>
 
@@ -21,14 +21,14 @@
             <div class="text-area">
                 <textarea placeholder="This is a placeholder" rows="6" cols="40"></textarea>
                 <div class="bottom-butt">
-                    <button id="butt3">Save</button>
+                    <button id="butt3" onclick="save_text()">Save</button>
                     <button id="butt4">Cancel</button>
                 </div>
             </div>
 
         </main>
 
-    <nav>
+    <nav id="nav" class="navclass">
         <h2>My Notes</h2>
             <ul>
                 <li>note one</li>
@@ -36,12 +36,13 @@
             </ul>
     </nav>
 
-    <footer>
+    <footer class="foot">
         <h2>Keep in Touch</h2>
         <a href="https://www.linkedin.com/home"><img src="images/linkedin.jpg" height="50" width="50"> </a>
         <a href="https://en.wikipedia.org/wiki/Internet"><img src="images/Internet.jpg" height="50" width="50"> </a>
     </footer>
 
 </div>
+<script src="java_s/scriptmain.js"></script>
 </body>
 </html>
