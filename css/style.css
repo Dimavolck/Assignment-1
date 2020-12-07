@@ -142,7 +142,7 @@ button{
     margin: 10px;
 }
 
-.text-area{
+.textclass{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -150,6 +150,7 @@ button{
     height: 75%;
     margin-bottom: 45px;
 }
+
 
 .bottom-butt{
     display: flex;

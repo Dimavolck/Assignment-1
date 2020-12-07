@@ -1,5 +1,13 @@
+//function calls
 
 document.querySelector("#butt1").addEventListener("click", function (){
+
+    if (document.getElementById('text1').style.visibility === "hidden"){
+        toggleRefreshText()
+    }else{
+        toggleNewText()
+    
+    }
 
 });
 
@@ -14,11 +22,16 @@ document.querySelector("#butt2").addEventListener("click", function (){
 });
 
 document.querySelector("#butt3").addEventListener("click", function (){});
-document.querySelector("#butt4").addEventListener("click", function (){});
 
 
+document.querySelector("#butt4").addEventListener("click", function (){
+
+    toggleRemoveText()
+
+});
 
 
+// functions which work to change the css
 
 function toggleDarkTheme(){
 
@@ -64,4 +77,21 @@ function toggleLightTheme(){
     document.getElementById("ta").classList.remove("dark-ta");
 
     document.getElementById("butt2").innerText = "Dark Theme";
+}
+
+
+function toggleRemoveText(){
+
+    document.getElementById('text1').style.visibility = "hidden";
+}
+
+function toggleRefreshText(){
+
+    document.getElementById('text1').style.visibility = "visible";
+
+}
+
+function toggleNewText(){
+    
+    document.getElementById("ta").value = "";
 }
