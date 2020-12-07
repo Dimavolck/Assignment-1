@@ -11,14 +11,19 @@ header{
     text-align: center;
 }
 
-main{
+.mainclass{
     background-color: gainsboro;
 }
+
+.dark-main{
+    background-color: rgb(56, 49, 49);
+}
+
 .navclass{
     background-color: darkgray;
 }
 .dark-nav{
-    background-color: rgb(28, 2, 255);
+    background-color: dimgrey;
 }
 footer{
 background-color: #cfa298 ;
@@ -29,7 +34,7 @@ header > h1{
     margin-top: 20px;
 }
 
-textarea{
+.text-a{
     padding: 10px;
     width: 80%;
     height: 75%;
@@ -37,6 +42,18 @@ textarea{
     border-radius: 8px;
     border: none;
 }
+
+.dark-ta{
+    padding: 10px;
+    width: 80%;
+    height: 75%;
+    resize: none;
+    border-radius: 8px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
 button{
     border-radius: 10px;
     border-style: none;
@@ -76,9 +93,15 @@ button{
 }
 
 
-#butt1{
+.b1{
     color: white;
     background-color: #5CA170;
+    padding: 15px;
+}
+
+.dark-butt1{
+    color: white;
+    background-color: #0c2e16;
     padding: 15px;
 }
 
@@ -89,15 +112,27 @@ button{
     margin-right: 30px;
 }
 
-#butt3{
+.b3{
     color: white;
     background-color: #5CA170;
     padding: 15px;
 }
 
-#butt4{
+.dark-butt3{
+    color: white;
+    background-color: #0c2e16;
+    padding: 15px;
+}
+
+.b4{
     color: white;
     background-color: #F23A2F;
+    padding: 15px;
+}
+
+.dark-butt4{
+    color: white;
+    background-color: #380503;
     padding: 15px;
 }
 
@@ -106,6 +141,7 @@ button{
     justify-content: space-between;
     margin: 10px;
 }
+
 .text-area{
     display: flex;
     flex-direction: column;
@@ -114,6 +150,7 @@ button{
     height: 75%;
     margin-bottom: 45px;
 }
+
 .bottom-butt{
     display: flex;
     justify-content: center;
