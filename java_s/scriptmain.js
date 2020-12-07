@@ -21,7 +21,11 @@ document.querySelector("#butt2").addEventListener("click", function (){
     
 });
 
-document.querySelector("#butt3").addEventListener("click", function (){});
+document.querySelector("#butt3").addEventListener("click", function (){
+
+    toggleNoteAdder(notesArray)
+
+});
 
 
 document.querySelector("#butt4").addEventListener("click", function (){
@@ -30,6 +34,14 @@ document.querySelector("#butt4").addEventListener("click", function (){
 
 });
 
+//array declaration
+
+var notesArray = [
+
+    {title:"note one", body:"some text 1"},
+    {title:"note two", body:"some text 2"}
+
+]
 
 // functions which work to change the css
 
@@ -94,4 +106,33 @@ function toggleRefreshText(){
 function toggleNewText(){
     
     document.getElementById("ta").value = "";
+
 }
+
+function toggleNoteAdder(notesArray){
+    var getArray = []
+    var ta = document.getElementById("ta").value;
+    userArray = ta.split('\n');
+    notesArray.push({
+        title: userArray[0], body: ta
+    })
+    
+    console.log(notesArray);
+
+    var newList = document.createElement("li");
+    newList.classList.add("list");
+    newList.append(notesArray[notesArray.length - 1].title);
+
+    var newUl = document.getElementById("untitled");
+    newUl.append(newList);
+}
+
+var notesItemList = document.querySelector('#untitled');
+notesItemList.addEventListener('click', (x) => {
+    var ListItem = x.target.innerHTML;
+    for (var i = 0; i < notesArray.length; i++){
+        if (notesArray[i].title == ListItem){
+            document.querySelector('#ta').value = notesArray[i].body;
+        }
+    }
+});
